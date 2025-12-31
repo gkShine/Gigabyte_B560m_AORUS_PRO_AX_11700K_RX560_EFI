@@ -128,6 +128,11 @@
                     <key>model</key>
                     <string>Intel(R) Ethernet Controller I225-V</string>
                 </dict>
+                <key>PciRoot(0x0)/Pci(0x1c,0x7)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>IOName</key>
+                    <string>pci14e4,43a0</string>
+                </dict>
             </dict>
             <key>Delete</key>
             <dict/>
@@ -169,24 +174,6 @@
                     <string></string>
                     <key>MinKernel</key>
                     <string>10.0.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AirportItlwm.kext</string>
-                    <key>Comment</key>
-                    <string>V2.3.0</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -500,6 +487,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>IOSkywalkFamily.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IOSkywalkFamily</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>IO80211FamilyLegacy.kext</string>
                     <key>Comment</key>
                     <string>V1200.12.2b1</string>
@@ -524,7 +529,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirPortBrcmNIC</string>
+                    <string>Contents/MacOS/IO80211FamilyLegacy</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -536,13 +541,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>IOSkywalkFamily.kext</string>
+                    <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V1.0</string>
+                    <string>V2.3.0</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IOSkywalkFamily</string>
+                    <string>Contents/MacOS/AirportItlwm</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -555,7 +560,7 @@
             <array>
                 <dict>
                     <key>Arch</key>
-                    <string>x86_64</string>
+                    <string>Any</string>
                     <key>Comment</key>
                     <string>Allow IOSkywalk Downgrade</string>
                     <key>Enabled</key>
@@ -696,7 +701,7 @@
                 <key>InstanceIdentifier</key>
                 <string></string>
                 <key>LauncherOption</key>
-                <string>Disabled</string>
+                <string>Full</string>
                 <key>LauncherPath</key>
                 <string>Default</string>
                 <key>PickerAttributes</key>
@@ -708,13 +713,13 @@
                 <key>PickerVariant</key>
                 <string>Acidanthera\Monterey</string>
                 <key>PollAppleHotKeys</key>
-                <false/>
+                <true/>
                 <key>ShowPicker</key>
                 <true/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
-                <integer>5</integer>
+                <integer>10</integer>
             </dict>
             <key>Debug</key>
             <dict>
@@ -869,9 +874,9 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>shikigva=128 alcid=66 dk.e1000=0 keepsyms=1 amfi=0x80</string>
+                    <string>keepsyms=1 amfi=0x80 shikigva=128 alcid=66 dk.e1000=0</string>
                     <key>csr-active-config</key>
-                    <data>AAAAAA==</data>
+                    <data>AwoAAA==</data>
                     <key>run-efi-updater</key>
                     <string>No</string>
                 </dict>
